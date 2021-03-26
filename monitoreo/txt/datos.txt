@@ -1,0 +1,75 @@
+<div class="login-page">
+    <div class="" form-group row"">
+        <center>
+            <img src="img/logo1.png" width="70%">
+        </center>
+        <form action="control/login.php" method="POST">
+            <input type="email" name="usuario"
+                patern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="usuario" />
+            <input type="password" name="clave" placeholder="contraseña" />
+            <br>
+            <button type="submit" class="boton_per">Ingresar</button>
+        </form>
+    </div>
+</div>
+
+<form>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input type="email" id="form1Example1" class="form-control" />
+        <label class="form-label" for="form1Example1">Correo</label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="form1Example2" class="form-control" />
+        <label class="form-label" for="form1Example2">Contraseña</label>
+    </div>
+</form>
+
+
+UPDATE persona SET columna1 = 'nuevo_valor' WHERE columna1 = 'valor1'; 
+En esta sentencia todos las filas de la tabla nombre_tabla almacenados 
+en la columna1 que contengan el dato valor1, serán modificadas por el 
+dato nuevo_valor.
+
+
+
+
+/*
+    $usuario = "postgresql";
+	$password = "123";
+	$servidor = "localhost";
+    $basededatos = "monitoreo";
+	$puerto ="59578";
+    
+
+	
+	$conexion = pg_connect("host='$servidor' port='$puerto' dbname='$basededatos' user='$usuario' password='$password'");
+
+
+
+function conectar_PostgreSQL( $usuario, $pass, $host, $bd )
+{
+	 $conexion = pg_connect( "user=".$usuario."postgresql".
+							"password=".$pass."123".
+							"host=".$host."localhost".
+							"dbname=".$bd."monitoreo") or die( "Error al conectar: ".pg_last_error() );
+	return $conexion;
+}
+	
+<?php
+*/
+// detalles de la conexion
+
+
+/* Revisamos el estado de la conexion en caso de errores. 
+if(!$dbconn) {
+echo "Error: No se ha podido conectar a la base de datos\n";
+} else {
+echo "Conexión exitosa\n";
+}
+
+// Close connection
+//pg_close($dbconn);
+*/
